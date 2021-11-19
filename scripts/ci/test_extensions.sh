@@ -39,6 +39,7 @@ for ext in $output; do
 done
 
 tree /opt/az/azcliextensions/arcdata
+find /opt/az -name kubernetes
 
 az self-test --debug
 if [ $? != 0 ]
