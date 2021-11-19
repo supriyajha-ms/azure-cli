@@ -38,6 +38,8 @@ for ext in $output; do
     fi
 done
 
+tree /opt/az/azcliextensions/arcdata
+
 az self-test --debug
 if [ $? != 0 ]
 then
