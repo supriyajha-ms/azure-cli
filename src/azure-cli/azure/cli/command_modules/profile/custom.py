@@ -181,6 +181,10 @@ def list_locations(cmd):
 
 
 def check_cli(cmd):
+    import sys
+    print(sys.path)
+    import kubernetes
+    print(kubernetes.__path__)
     from azure.cli.core.file_util import (
         create_invoker_and_load_cmds_and_args, get_all_help)
 
